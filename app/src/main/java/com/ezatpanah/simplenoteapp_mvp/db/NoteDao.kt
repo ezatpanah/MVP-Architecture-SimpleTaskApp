@@ -29,4 +29,10 @@ interface NoteDao {
     @Query("SELECT * FROM $NOTE_TABLE WHERE id ==:id")
     fun getNote(id:Int) :Observable<NoteEntity>
 
+    @Query("SELECT * FROM $NOTE_TABLE WHERE pr == :priority")
+    fun filterNote(priority: String): Observable<List<NoteEntity>>
+
+    @Query("SELECT * FROM $NOTE_TABLE WHERE title LIKE '%' || :title || '%' ")
+    fun searchNote(title: String): Observable<List<NoteEntity>>
+
 }

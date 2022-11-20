@@ -7,9 +7,9 @@ import com.ezatpanah.simplenoteapp_mvp.utils.NOTE_TABLE
 @Entity(tableName = NOTE_TABLE)
 data class NoteEntity(
     @PrimaryKey(autoGenerate = true)
-    val id: Int = 0,
-    val title: String = "",
-    val desc: String = "",
-    val cat: String = "",
-    val pr: String = "",
+    var id: Int = 0,
+    var title: String = "",
+    var desc: String = "",
+    var cat: String = "",
+    var pr: String = "",
 )
