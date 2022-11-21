@@ -57,7 +57,9 @@ class NoteFragment : BottomSheetDialogFragment(), NoteContracts.View {
         }
 
         binding.apply {
+
             imgClose.setOnClickListener { this@NoteFragment.dismiss() }
+
             catSpinnerItem()
             prioritySpinnerItem()
 
@@ -79,10 +81,7 @@ class NoteFragment : BottomSheetDialogFragment(), NoteContracts.View {
                     EDIT -> presenter.updateNote(entity)
                     NEW -> presenter.saveNote(entity)
                 }
-                presenter.saveNote(entity)
             }
-
-
         }
     }
 
