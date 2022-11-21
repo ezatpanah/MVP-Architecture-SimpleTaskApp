@@ -8,6 +8,8 @@ class DbRepository  @Inject constructor(private val dao : NoteDao){
     fun saveNote (entity: NoteEntity) = dao .saveNote(entity)
     fun loadAllNotes() = dao.getAllNotes()
     fun deleteNote(entity: NoteEntity) = dao.deleteNote(entity)
+    fun detailsNote(id:Int)= dao.getNote(id)
+    fun updateNote(entity: NoteEntity)= dao.updateNote(entity)
     fun filterNote(priority: String) = dao.filterNote(priority)
     fun searchNote(title: String) = dao.searchNote(title)
 }

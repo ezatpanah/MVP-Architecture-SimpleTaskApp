@@ -19,4 +19,22 @@ class NotePresenter @Inject constructor(
                 view.close()
             }
     }
+
+    override fun detailsNote(id: Int) {
+        disposable=repository.detailsNote(id)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe{
+                view.loadNoteData(it)
+            }
+    }
+
+    override fun updateNote(entity: NoteEntity) {
+        disposable=repository.updateNote(entity)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe{
+                view.close()
+            }
+    }
 }
