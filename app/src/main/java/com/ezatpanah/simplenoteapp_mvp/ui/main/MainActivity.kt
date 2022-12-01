@@ -1,13 +1,12 @@
 package com.ezatpanah.simplenoteapp_mvp.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.ezatpanah.simplenoteapp_mvp.R
 import com.ezatpanah.simplenoteapp_mvp.adapter.NoteAdapter
 import com.ezatpanah.simplenoteapp_mvp.databinding.ActivityMainBinding
@@ -107,7 +106,7 @@ class MainActivity : AppCompatActivity(), MainContracts.View {
             noteList.visibility = View.VISIBLE
             noteAdapter.setData(notes)
             noteList.apply {
-                layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+                layoutManager = LinearLayoutManager(this@MainActivity, LinearLayoutManager.VERTICAL, false)
                 adapter = noteAdapter
             }
         }

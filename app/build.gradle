@@ -92,4 +92,7 @@ dependencies {
     //RxBinding
     implementation 'com.jakewharton.rxbinding4:rxbinding:4.0.0'
 
+    implementation "com.airbnb.android:lottie:3.4.0"
+
+
 }

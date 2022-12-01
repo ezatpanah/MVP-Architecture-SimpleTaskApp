@@ -27,9 +27,7 @@ class NoteAdapter @Inject constructor() : RecyclerView.Adapter<NoteAdapter.ViewH
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        //getItem from PagingDataAdapter
         holder.bind(noteList[position])
-        //Not duplicate items
         holder.setIsRecyclable(false)
     }
 
@@ -50,10 +48,10 @@ class NoteAdapter @Inject constructor() : RecyclerView.Adapter<NoteAdapter.ViewH
                 }
                 //Category
                 when (item.cat) {
-                    HOME -> categoryImg.setImageResource(R.drawable.home)
-                    WORK -> categoryImg.setImageResource(R.drawable.work)
+                    HOME -> categoryImg.setImageResource(R.drawable.house)
+                    WORK -> categoryImg.setImageResource(R.drawable.suitcase)
                     EDUCATION -> categoryImg.setImageResource(R.drawable.education)
-                    HEALTH -> categoryImg.setImageResource(R.drawable.healthcare)
+                    HEALTH -> categoryImg.setImageResource(R.drawable.heartbeat)
                 }
                 //Menu
                 menuImg.setOnClickListener {
