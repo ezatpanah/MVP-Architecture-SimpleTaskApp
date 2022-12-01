@@ -14,10 +14,9 @@ Technologies and Libraries Used :
 - Dagger Hilt
 - RxJava
 - Lottie
-- Coil
 
 
 
 Screen-Shot :
 <br>
-<img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669915818.png" width="20%"><img alt="EzatpanahSimple-Note-App-MVP" src="screenshots/Screenshot_1669915869.png" width="20%"><img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669916570.png" width="20%"><img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669917082.png" width="20%"><img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669917090.png" width="20%">
+<img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669915818.png" width="20%"><img alt="EzatpanahSimple-Note-App-MVP" src="screenshots/Screenshot_1669915869.png" width="20%"><img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669919468.png" width="20%"><img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669919473.png" width="20%"><img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669919479.png" width="20%">
