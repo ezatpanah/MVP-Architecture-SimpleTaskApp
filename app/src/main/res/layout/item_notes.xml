@@ -34,10 +34,12 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
                 android:maxLines="1"
+                android:text="titleTxt"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/descTxt"
+                app:layout_constraintEnd_toStartOf="@id/categoryImg"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,34 +49,38 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="15dp"
+                android:layout_marginBottom="8dp"
                 android:fontFamily="sans-serif-light"
                 android:lineSpacingExtra="5dp"
+                android:text="descTxt"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/menuImg"
                 app:layout_constraintStart_toStartOf="@id/titleTxt"
                 app:layout_constraintTop_toBottomOf="@id/titleTxt" />
 
             <ImageView
                 android:id="@+id/categoryImg"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
                 android:src="@drawable/suitcase"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@id/titleTxt"
-                app:layout_constraintTop_toBottomOf="@id/descTxt" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/descTxt"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/menuImg"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
                 android:src="@drawable/ic_more2"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categoryImg" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
