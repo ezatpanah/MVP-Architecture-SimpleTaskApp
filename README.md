@@ -2,7 +2,7 @@
 
 Overview :
 
-The purpose of this application is to provide a list of Movies and show the details of each Movie
+...
 
 The app was written in Kotlin.
 
