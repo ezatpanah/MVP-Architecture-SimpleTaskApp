@@ -20,4 +20,4 @@ Technologies and Libraries Used :
 
 Screen-Shot :
 <br>
-<img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669915818.png" width="20%"><img alt="EzatpanahSimple-Note-App-MVP" src="screenshots/Screenshot_1669915869.png" width="20%"><img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669916570.png" width="20%"><img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/creenshot_1669917082.png" width="20%"><img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669917090.png" width="20%">
+<img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669915818.png" width="20%"><img alt="EzatpanahSimple-Note-App-MVP" src="screenshots/Screenshot_1669915869.png" width="20%"><img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669916570.png" width="20%"><img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669917082.png" width="20%"><img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1669917090.png" width="20%">
