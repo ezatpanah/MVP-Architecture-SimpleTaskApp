@@ -27,7 +27,7 @@ object DatabaseModule {
 
     @Provides
     @Singleton
-    fun provideDao(db: TaskDatabase) = db.noteDao()
+    fun provideDao(db: TaskDatabase) = db.taskDao()
 
     @Provides
     @Singleton
