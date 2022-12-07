@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import com.ezatpanah.simpletodoapp_mvp.databinding.FragmentNoteBinding
+import com.ezatpanah.simpletodoapp_mvp.databinding.FragmentAddTaskBinding
 import com.ezatpanah.simpletodoapp_mvp.db.TaskEntity
 import com.ezatpanah.simpletodoapp_mvp.repository.DbRepository
 import com.ezatpanah.simpletodoapp_mvp.utils.Constants.BUNDLE_ID
@@ -19,7 +19,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class AddTaskFragment : BottomSheetDialogFragment(), AddTaskContracts.View {
 
-    private lateinit var binding: FragmentNoteBinding
+    private lateinit var binding: FragmentAddTaskBinding
 
     private lateinit var catList: Array<String>
     private var cat = ""
@@ -41,7 +41,7 @@ class AddTaskFragment : BottomSheetDialogFragment(), AddTaskContracts.View {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        binding = FragmentNoteBinding.inflate(layoutInflater)
+        binding = FragmentAddTaskBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -70,13 +70,13 @@ class AddTaskFragment : BottomSheetDialogFragment(), AddTaskContracts.View {
             saveNote.setOnClickListener {
                 val title = titleEdt.text.toString()
                 val desc = descEdt.text.toString()
-                //entity
+
                 entity.id = noteId
                 entity.title = title
                 entity.desc = desc
                 entity.cat = cat
                 entity.pr = priority
-                //save
+
                 when (type) {
                     EDIT -> presenter.updateTask(entity)
                     NEW -> presenter.saveTask(entity)
