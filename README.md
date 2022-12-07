@@ -6,7 +6,7 @@ The purpose of this project series is to teach different architectures with diff
 
 This project in
 - MVP architecture : Current Repo 
-- MVVM architecture : Coming soon [ Room Database - LiveData - Flow - Coroutines - Dagger Hilt - ViewModel - Lottie - View Binding ]
+- MVVM architecture : https://github.com/ezatpanah/SimpleTaskApp-MVVM [ Room Database - LiveData - Flow - Coroutines - Dagger Hilt - ViewModel - Lottie - View Binding ]
 - MVI architecture : Coming soon [  ]
 
 The app was written in Kotlin.
@@ -24,4 +24,4 @@ Technologies and Libraries Used :
 
 Screen-Shot :
 <br>
-<img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1670439161.png" width="18%"> <img alt="EzatpanahSimple-Note-App-MVP" src="screenshots/Screenshot_1670439165.png" width="18%"> <img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1670439228.png" width="18%"> <img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1670439231.png" width="18%"> <img alt="Ezatpanah Simple-Note-App-MVP" src="screenshots/Screenshot_1670439234.png" width="18%">
+<img alt="Ezatpanah SimpleTaskApp-MVP" src="screenshots/Screenshot_1670439161.png" width="18%"> <img alt="Ezatpanah SimpleTaskApp-MVP" src="screenshots/Screenshot_1670439165.png" width="18%"> <img alt="Ezatpanah SimpleTaskApp-MVP" src="screenshots/Screenshot_1670439228.png" width="18%"> <img alt="Ezatpanah SimpleTaskApp-MVP" src="screenshots/Screenshot_1670439231.png" width="18%"> <img alt="Ezatpanah SimpleTaskApp-MVP" src="screenshots/Screenshot_1670439234.png" width="18%">
