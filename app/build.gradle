@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.ezatpanah.simplenoteapp_mvp'
+    namespace 'com.ezatpanah.simpletodoapp_mvp'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.ezatpanah.simplenoteapp_mvp"
+        applicationId "com.ezatpanah.simpletodoapp_mvp"
         minSdk 21
         targetSdk 32
         versionCode 1

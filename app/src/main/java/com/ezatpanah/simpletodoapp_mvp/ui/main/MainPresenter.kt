@@ -1,0 +1,60 @@
+package com.ezatpanah.simpletodoapp_mvp.ui.main
+
+import com.ezatpanah.simpletodoapp_mvp.db.TaskEntity
+import com.ezatpanah.simpletodoapp_mvp.repository.DbRepository
+import com.ezatpanah.simpletodoapp_mvp.ui.base.BasePresenterImpl
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
+import io.reactivex.rxjava3.schedulers.Schedulers
+import javax.inject.Inject
+
+class MainPresenter @Inject constructor(private val repository: DbRepository, private val view: MainContracts.View) :
+    MainContracts.Presenter, BasePresenterImpl() {
+
+        override fun loadAllTasks() {
+            disposable = repository.loadAllTasks()
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe {
+                    if (it.isNotEmpty()) {
+                        view.showAllTasks(it)
+                    } else {
+                        view.showEmpty()
+                    }
+                }
+        }
+
+        override fun deleteTask(entity: TaskEntity) {
+            disposable = repository.deleteTask(entity)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe {
+                    view.deleteMessage()
+                }
+        }
+
+        override fun filterTask(priority: String) {
+            disposable = repository.filterTask(priority)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe {
+                    if (it.isNotEmpty()) {
+                        view.showAllTasks(it)
+                    } else {
+                        view.showEmpty()
+                    }
+                }
+        }
+
+        override fun searchTask(title: String) {
+            disposable = repository.searchTask(title)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe {
+                    if (it.isNotEmpty()) {
+                        view.showAllTasks(it)
+                    } else {
+                        view.showEmpty()
+                    }
+                }
+        }
+    }
