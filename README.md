@@ -2,7 +2,7 @@
 
 Overview :
 <br>
-The purpose of this project series is to teach different architectures with different structures, and you can check these architectures and structures.
+The purpose of this project series is to teach different architectures with different structures, and you can check these architectures and structures in same App
 
 This project in
 - MVP architecture : Current Repo 
