@@ -1,4 +1,4 @@
-# Simple-Note-App-MVP
+# SimpleTaskApp-MVP
 
 Overview :
 <br>
