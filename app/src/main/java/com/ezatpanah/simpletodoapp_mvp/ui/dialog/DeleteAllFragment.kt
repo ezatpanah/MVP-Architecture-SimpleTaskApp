@@ -49,6 +49,6 @@ class DeleteAllFragment : DialogFragment() , DeleteAllContracts.View {
     }
 
     override fun deleteMessage() {
-        Snackbar.make(binding.root, "All notes deleted!", Snackbar.LENGTH_SHORT).show()
+        Snackbar.make(binding.root, "All Tasks deleted!", Snackbar.LENGTH_SHORT).show()
     }
 }
